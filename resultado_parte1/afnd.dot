@@ -1,0 +1,22 @@
+digraph AFND {
+    rankdir=LR;
+    node [shape = circle];
+    node [shape = doublecircle]; "E";
+    node [shape = circle];
+    "" [shape=point];
+    "" -> "A";
+
+    "A" -> "B" [label = "1"];
+    "A" -> "C" [label = "ε"];
+    "A" -> "G" [label = "ε"];
+    "B" -> "F" [label = "0"];
+    "B" -> "B" [label = "1"];
+    "C" -> "D" [label = "0"];
+    "D" -> "E" [label = "0"];
+    "D" -> "H" [label = "0"];
+    "D" -> "D" [label = "1"];
+    "F" -> "G" [label = "ε"];
+    "G" -> "H" [label = "1"];
+    "H" -> "H" [label = "0"];
+    "H" -> "E" [label = "1"];
+}
