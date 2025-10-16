@@ -12,8 +12,8 @@ digraph AFND {
     "B" -> "F" [label = "0"];
     "B" -> "B" [label = "1"];
     "C" -> "D" [label = "0"];
-    "D" -> "H" [label = "0"];
     "D" -> "E" [label = "0"];
+    "D" -> "H" [label = "0"];
     "D" -> "D" [label = "1"];
     "F" -> "G" [label = "ε"];
     "G" -> "H" [label = "1"];
